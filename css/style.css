@@ -1,0 +1,217 @@
+body {
+    font-family: cursive;
+    margin: auto;
+    padding: 10px;
+    max-width: 1024px;
+}
+#linea1 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    align-items: center;
+}
+#credito {
+    color: orange;
+    font-size: 2em;
+}
+#dinero {
+    font-size: 2.3em;
+}
+#euro {
+    font-size: 1.4em;
+}
+#tirar {
+    width: 160px;
+    height: 160px;
+    background-color: #fff0c9;
+    border-radius: 50%;
+    border: 4px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    box-shadow: 0 0 10px black inset;
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 165px;
+}
+header {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 324px;
+}
+#ventanas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ventana {
+    /* width: 100px; */
+    margin: 10px 0;
+}
+.ventana img {
+    width: 85px;
+}
+.imagen {
+    border: 3px solid crimson;
+    border-radius: 10px;
+    padding: 20px 8px;
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    border: 3px solid crimson;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1em;
+    background-color: #fff0c9;
+    box-shadow: 0 0 10px black inset;
+    margin-top: 20px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+#tirar:hover, .boton:hover {
+    background-color: white;
+    box-shadow: 0 0 13px crimson inset;
+}
+#monedas {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#monedas img {
+    width: 25px;
+    margin: 1px;
+}
+#velo {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+}
+#velo img {
+    width: 30px;
+}
+#cerrar {
+    width: 30px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+}
+#cuadro_mensaje {
+    border: 5px solid crimson;
+    width: 80%;
+    height: 100px;
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#mensaje {
+    font-size: 1.6em;
+    color: crimson;
+    text-align: center;
+    width: 100%;
+}
+#mensaje img {
+    width: 40px;
+    margin: 2px;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        position: unset;
+        height: auto;
+        justify-content: space-around;
+    }
+    #monedas {
+        /* display: grid;
+        grid-template-columns: repeat(
+            auto-fit,minmax(20px,20px)
+        ); */
+        margin: 10px 0;
+        height: 110px;
+        width: 250px;
+        align-content: center;
+        justify-content: start;
+        overflow: hidden;
+    }
+    #monedas img {
+        width: 25px;
+        height: auto;
+    }
+    #linea1 {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 150px;
+    }
+    #tirar {
+        width: 120px;
+        height: 120px;
+        font-size: 2.5em;
+        position: unset;
+    }
+    .ventana {
+        width: 150px;
+    }
+    .ventana img {
+        width: 120px;
+    }
+    .imagen {
+        padding: 30px 0;
+    }
+    .boton {
+        font-size: 1.2em;
+        line-height: 50px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 900px) {
+    #tirar {
+        width: 150px;
+        height: 150px;
+        font-size: 3em;
+    }
+    #monedas {
+        width: 400px;
+    }
+    #ventanas {
+        justify-content: space-around;
+    }
+    .ventana {
+        width: 200px;
+    }
+    .ventana img {
+        width: 150px;
+    }
+    .imagen {
+        padding: 40px 0;
+    }
+    .boton {
+        font-size: 1.5em;
+        line-height: 60px;
+    }
+}

@@ -1,0 +1,141 @@
+img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+body {
+    font-family:cursive;
+    margin:auto;
+    padding: 10px;
+    max-width: 1024px;
+}
+#linea1 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 19px;
+}
+#credito {
+    color: orange;
+    font-size: 1.5em;
+}
+#dinero {
+    font-size: 2.3em;
+   
+}
+#euro {
+    font-size: 1.4em;
+}
+#tirar {
+    width: 150px;
+    height: 150px;
+    background-color: #fff0c9;
+    border-radius: 50%;
+    border: 6px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    box-shadow: 0 0 13px black inset;
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 120px;
+}
+header {
+    position: relative;
+    height: 230px;
+}
+section {
+    margin-top: 25px;
+}
+#ventanas {
+    display: flex;
+    justify-content: space-around;
+}
+.ventana{
+    width: 115px;
+}
+.ventana img {
+    width: 90px;
+}
+.imagen {
+    border: 4px solid crimson;
+    border-radius: 10px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content:  center;
+}
+.boton {
+    border: 4px solid crimson;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.2em;
+    background-color: #fff0c9;
+    box-shadow: 0 0 10px black inset;
+    margin-top:  12px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+#tirar:hover, .boton:hover {
+    background-color: white;
+    box-shadow: 0 0 13px crimson inset;
+}
+#monedas img {
+    width: 28px;
+    margin: 1px;
+}
+#monedas {
+    margin: 10px 19px 0 19px;
+    width: 92%;
+    height: 60px;
+    overflow: hidden;
+}
+#mensaje {
+    width: 30px;
+}
+#velo {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+}
+#velo img {
+    width: 30px;
+}
+#cerrar {
+    width: 30px;
+    top: 5px;
+    right:5px;
+    position: absolute;
+}
+#cuadro_mensaje {
+    border: 5px solid crimson;
+    width:80%;
+    height: 100px;
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+}
+#mensaje {
+    font-size: 1.6em;
+    color: crimson;
+    text-align: center;
+    width: 100%;
+    
+}
+#mensaje img {
+    width: 40px;
+    margin: 2px;
+}
